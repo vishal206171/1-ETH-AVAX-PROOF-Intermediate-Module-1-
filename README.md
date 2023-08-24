@@ -16,14 +16,14 @@ This contract is using the MIT License.
 
 The `ErrorHandling` contract provides the following functions:
 
-### weather
-The weather is used to see weather. It uses the require() statement to check if it is sunny. If the condition fails, the function execution is reverted. Otherwise, it adds 3 to the finalCall variable. The assert() statement is used to verify that finalCall is not equal to 0.
+### sunady
+The weather is used to see weather. It uses the require() statement to check if it is sunday or not. If the condition fails, the function execution is reverted. Otherwise, it adds 3 to the finalCall variable. The assert() statement is used to verify that finalCall is not equal to 0.
 
 ### day Changer
 The weatherChanger function allows users to change the weather condition. It toggles the sunny variable between true and false.
 
 ### Bringing books
-The BringUmbrella function determines if an umbrella needs to be brought. If it is not sunny, the umbrella variable is set to true. Otherwise, the function execution is reverted with an error message using the revert() statement.
+The Bringbooks function determines if an books needs to be brought. If it is not sunny, the books variable is set to true. Otherwise, the function execution is reverted with an error message using the revert() statement.
 
 ### Get Final Call
 The getCal function is a view function that returns the value of the finalCal variable.
